@@ -1,8 +1,8 @@
 package com.uco.managewood.procesadormanagewood.config;
-
+/*
 
 import com.uco.managewood.procesadormanagewood.jwt.JwtAuthenticationEntryPoint;
-import com.uco.managewood.procesadormanagewood.jwt.JwtRequestFilter;
+//import com.uco.managewood.procesadormanagewood.jwt.JwtRequestFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -67,3 +67,4 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         httpSecurity.addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class);
     }
 }
+*/
