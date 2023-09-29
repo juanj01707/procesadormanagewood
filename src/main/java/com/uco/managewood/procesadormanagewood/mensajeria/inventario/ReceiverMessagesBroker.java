@@ -23,7 +23,8 @@ public class ReceiverMessagesBroker {
     @RabbitListener(queues = "${inventario.procesar.queue-name}")
     public void receiveMessageProcessInventario(String message) {
         try {
-            System.out.println("El mensaje de rabbit llegó "+message);
+            System.out.println("El mensaje de rabbit llego "+message);
+            System.out.println(obtenerObjetoDeMensaje(message).get().getNombre());
             inventarioService.saveInventario(obtenerObjetoDeMensaje(message).get());
         } catch (Exception e) {
             System.out.println(e);
